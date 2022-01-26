@@ -34,29 +34,31 @@ public class commonClass extends BaseClass {
 
 	@BeforeClass	
 	public void BeforeClass() {
-		System.out.println("This is Test5");	
+		System.out.println("This is Before Class");	
 	}
 	@AfterClass
 	public void AfterClass() {
-		System.out.println("This is Test5");	
+		System.out.println("This is After Class");	
 	}
+	
+	@BeforeSuite
+	public void BeforeSuite() {
+		System.out.println("This is BeforeSuite");	
+	}
+	
 	@AfterSuite
 	public void AfterSuite() {
 		System.out.println("This is AfterSuite");	
 	}
 
-	@BeforeSuite
-	public void BeforeSuite() {
-		System.out.println("This is BeforeSuite");	
-	}
 	@AfterTest
 	public void AfterTest() {
-		System.out.println("This is AfterSuite");	
+		System.out.println("This is After Test");	
 	}
 
 	@BeforeTest
 	public void BeforeTest() {
-		System.out.println("This is BeforeSuite");	
+		System.out.println("This is Before Test");	
 	}
 }
 
